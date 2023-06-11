@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Unbounded", cursive;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 42px;
+  text-align: center;
+}
+
+.author {
+  padding-bottom: 50px;
+  text-align: right;
+  color: #00C4FF;
+}
+
+.author span {
+  color: white;
+}
+
+.bg_image {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1b4683, #3c9aa1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+}
+
+.city {
+  margin-top: 2rem;
+}
+
+.city,
+.temp {
+  font-size: 3rem;
+}
+
+.box_container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.box {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 730px) {
+  .bg_image{
+    padding: 2rem 0;
+  }
+
+  .box_container {
+    flex-direction: column;
+  }
+
+  .box,
+  .input {
+    width: 70vw;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .title {
+    font-size: 28px;
+    text-shadow: 20px 20px 20px 20px;
+  }
+
+  .box:hover {
+    transform: scale(1.05);
+  }
+}
